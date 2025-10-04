@@ -9,7 +9,6 @@ import java.nio.charset.StandardCharsets;
 public class AIService {
 
     private static final String API_URL = "https://api.openai.com/v1/chat/completions";
-    private static final String API_KEY = System.getenv("OPENAI_API_KEY");
 
     private static final String appDescription = "Satellite observations reveal insights about our dynamic home planet to scientists," +
             " but people without a remote sensing background often find the stories within these datasets difficult to access. " +
@@ -20,6 +19,8 @@ public class AIService {
             "to dive deeper into Earth’s unfolding ocean story. (Earth Science Division)";
 
     public static String askChatbot(String userInput) throws Exception {
+        String API_KEY = System.getenv("OPENAI_API_KEY");
+        System.out.println("Using API Key: " + (API_KEY != null ? "Present" : "Missing")); // Debugging line to check API key presence
         if (API_KEY == null) {
             throw new IllegalStateException("Missing OPENAI_API_KEY environment variable.");
         }

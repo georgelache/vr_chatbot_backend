@@ -1,0 +1,50 @@
+# Java Spring Boot WebSocket Project
+
+## Overview
+This project is a simple Java application built with Spring Boot and Maven.
+It demonstrates how to create and consume a WebSocket server.
+
+### Application Features
+The Application is intended to be a chatbot that can answer questions based on the provided context.
+- WebSocket server that echoes messages back to the client.
+- Uses OpenAI API to process messages (annotate with the context) and get answers (if configured).
+
+### About the Challenge
+    Satellite observations reveal insights about our dynamic home planet to scientists,
+    but people without a remote sensing background often find the stories within these datasets difficult
+    to access. NASA’s open data policy makes these observations available to everyone—scientists and
+    non-scientists alike. Your challenge is to build a short, immersive, virtual reality (VR) experience
+    that leverages NASA’s Earth observation datasets and visualizations to bring stories about our
+    planet’s oceans to life, connecting a broad audience to this data, its beauty, and its impact.
+    Using visuals, spatial audio, and even interactive elements, your VR experience can enable users
+    to dive deeper into Earth’s unfolding ocean story. (Earth Science Division)
+
+## Prerequisites
+- Java 17 or higher
+- Maven 3.6+
+- IntelliJ IDEA or any Java IDE
+
+## Setup
+
+1. Clone the repository.
+2. Set any required system environment variables.
+3. Build the project:
+   ```bash
+   mvn clean install
+   ```
+4. Run the application:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+
+## Consuming the WebSocket
+
+You can use a WebSocket client (such as [websocat](https://github.com/vi/websocat), [websocket.org Echo Test](https://www.websocket.org/echo.html), or a JavaScript client) to connect to the WebSocket endpoint.
+You can also use Postman to test the WebSocket connection.
+The WebSocket server will be running at `ws://localhost:8080/chat
+
+## Checking Environment Variables
+
+To check an environment variable in the Windows command prompt:
+
