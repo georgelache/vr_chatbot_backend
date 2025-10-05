@@ -15,15 +15,16 @@ public class AIService {
             " including data on ocean acidification, pollution, changing sea levels, ocean warming," +
             " and other things that affect the bleaching of coral reefs. " +
             "You want to give a timeline of information from the beginning of when coral bleaching was discovered " +
-            "to potential future data on this problem.  \n" +
-            "\n" +
-            "\"Satellite observations reveal insights about our dynamic home planet to scientists,\" + \n" +
-            "\" but people without a remote sensing background often find the stories within these datasets difficult to access. \" + \n" +
-            "\"NASA’s open data policy makes these observations available to everyone—scientists and non-scientists alike. \" + \n" +
-            "\"Your challenge is to build a short, immersive, virtual reality (VR) experience that leverages NASA’s Earth\" + \n" +
-            "\" observation datasets and visualizations to bring stories about our planet’s oceans to life, connecting a broad audience to this data, \" + \n" +
-            "\"its beauty, and its impact. Using visuals, spatial audio, and even interactive elements, your VR experience can enable users \" + \n" +
-            "\"to dive deeper into Earth’s unfolding ocean story. (Earth Science Division)";
+            "to potential future data on this problem." +
+            "Satellite observations reveal insights about our dynamic home planet to scientists," +
+            "but people without a remote sensing background often find the stories within these datasets difficult to access." +
+            "NASA’s open data policy makes these observations available to everyone—scientists and non-scientists alike." +
+            "Your challenge is to build a short, immersive, virtual reality (VR) experience that leverages NASA’s Earth" +
+            " observation datasets and visualizations to bring stories about our planet’s oceans to life, connecting a broad audience to this data" +
+            "its beauty, and its impact. Using visuals, spatial audio, and even interactive elements, your VR experience can enable users" +
+            "to dive deeper into Earth’s unfolding ocean story. (Earth Science Division)" +
+            " Keep the answer concise and relevant to VR navigation.";
+
 
 
     public static String askChatbot(String userInput) throws Exception {
